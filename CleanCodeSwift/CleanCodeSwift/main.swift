@@ -9,3 +9,6 @@ import Foundation
 
 print("Hello, World!")
 
+struct Cell {
+    var status: Int
+}
