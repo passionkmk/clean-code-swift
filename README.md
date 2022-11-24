@@ -5,3 +5,4 @@
 
 ### 목차
 - [Naming](doc/Naming.md)
+- [Method](doc/Method.md)
