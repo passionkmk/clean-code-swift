@@ -146,6 +146,68 @@ class EmployeeFactoryEmplemetation: EmployeeFactory {
 개선
 1. `switch` 추상문을 팩토리 패턴으로 은닉화함
 2. `switch`을 통해 적절한 `Employee` 를 따르는 클래스의 인스턴스를 생성.
-3.`isPayday`, `calculatePay()`, `deliveryPay()`는 프로토콜을 extention 으로 정의되어 있고 각 실제 파생 클래스의 함수가 실행됨.
+3. `isPayday`, `calculatePay()`, `deliveryPay()`는 프로토콜을 extention 으로 정의되어 있고 각 실제 파생 클래스의 함수가 실행됨.
+
+### 서술적인 이름을 사용하기
+```swift
+func testableHtml() { } // BAD
+func setupTeardownIncluder() { } // GOOD
+
+// 일관성 있는 이름으로
+func includeSetupAndTeardownPages() { }
+func includeSetupPage() { }
+func includeSuiteSetupPage() { }
+```
+
+### 함수 인수
+- 함수 인수는 3개 까지만 사용하도록 하자.
+- 무항 > 단항 > 2항 > 3항 순으로 좋다.
+- 2항인 함수는 단항인 함수보다 이해하기 어렵다.
+- 플래그 인수는 사용않도록 하자.
+- 인수가 많아 진다면 독자적인 객체로 생성하여 사용하자.
+
+### 부수효과를 만들지 마라
+```swift
+func checkPassword(userName: String, password: String) -> Bool {
+    let userService = UserService()
+    
+    guard let token = userService.getToken(userName: userName, password: password) else {
+        return false
+    }
+    
+    Session.initialize() // 부수 효과를 일으키는 부분
+
+    return true
+}
+```
+함수이름은 비밀번호 확인인데 세션을 초기화 시키고 있다.
+때문에 함수 이름만 보고 함수를 호출하는 사용자는 확인과 동시에 세션 초기화를 하는 문제를 일으킬 수 있다.
+
+### 명령과 조회를 분리하라.
+```swift
+// BAD
+func set(attribute: String, value: String) -> Bool { ... }
+
+// GOOD
+func attributeExist(attribute: String) -> Bool { ... }
+func setAttribute(attribute: String, value: String) { ... }
+
+if set(attribute: "user", value: "bob") { // "user"가 "bob"으로 설정하는 코드인가? 아니면 설정을 확인하는 코드인가?
+    ... 
+}
+
+// GOOD
+if attributeExist(attribute: "user") {
+    setAttribute(attribute: "user", value: "bob")
+}
+```
+함수는 뭔가를 수행하거나 뭔가에 답하거나 하나만 해야한다.
+- 객체를 **변경**하거나
+- 객체를 **반환**하거나
+
+### 그외
+- 반복하지 마라. 같은 코드 반복하지 않기.
+- 함수를 짜는 순서
+
     
 

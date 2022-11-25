@@ -75,6 +75,30 @@ private extension MethodExample {
 }
 
 private extension MethodExample {
+    func testableHtml() { } // BAD
+    func setupTeardownIncluder() { } // GOOD
+    
+    // 일관성 있는 이름으로
+    func includeSetupAndTeardownPages() { }
+    func includeSetupPage() { }
+    func includeSuiteSetupPage() { }
+}
+
+private extension MethodExample {
+    func set(attribute: String, value: String) -> Bool {
+        return false
+    }
+    
+    func attributeExist(attribute: String) -> Bool {
+        return true
+    }
+    
+    func setAttribute(attribute: String, value: String) {
+        
+    }
+}
+
+private extension MethodExample {
     // 한가지 일만 하는 함수
     func renderPageWithSetupAndTearsdowns(with data: PageData, isSuite: Bool) -> String {
         if isTestPage(data) {
