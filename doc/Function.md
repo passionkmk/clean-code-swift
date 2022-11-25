@@ -208,6 +208,3 @@ if attributeExist(attribute: "user") {
 ### 그외
 - 반복하지 마라. 같은 코드 반복하지 않기.
 - 함수를 짜는 순서
-
-    
-

@@ -1,5 +1,5 @@
 //
-//  Method.swift
+//  Function.swift
 //  CleanCodeSwift
 //
 //  Created by pkmk on 2022/11/24.
@@ -7,11 +7,11 @@
 
 import Foundation
 
-final class MethodExample {
+final class FuctionExample {
     
 }
 
-extension MethodExample {
+extension FuctionExample {
     class PageData {
         private var html: String = ""
         
@@ -21,7 +21,7 @@ extension MethodExample {
     }
 }
 
-private extension MethodExample {
+private extension FuctionExample {
     struct CommissionedEmployee: Employee {
         let record: EmployRecord
     }
@@ -49,7 +49,7 @@ private extension MethodExample {
 }
 
 
-private extension MethodExample {
+private extension FuctionExample {
     func calculatePay(record: EmployRecord) -> Money {
         switch record.type {
         case .commissioned:
@@ -74,7 +74,7 @@ private extension MethodExample {
     }
 }
 
-private extension MethodExample {
+private extension FuctionExample {
     func testableHtml() { } // BAD
     func setupTeardownIncluder() { } // GOOD
     
@@ -84,7 +84,7 @@ private extension MethodExample {
     func includeSuiteSetupPage() { }
 }
 
-private extension MethodExample {
+private extension FuctionExample {
     func set(attribute: String, value: String) -> Bool {
         return false
     }
@@ -98,7 +98,7 @@ private extension MethodExample {
     }
 }
 
-private extension MethodExample {
+private extension FuctionExample {
     // 한가지 일만 하는 함수
     func renderPageWithSetupAndTearsdowns(with data: PageData, isSuite: Bool) -> String {
         if isTestPage(data) {
@@ -121,7 +121,7 @@ private extension MethodExample {
     }
 }
 
-private extension MethodExample {
+private extension FuctionExample {
     func isTestPage(_ data: PageData) -> Bool {
         return true
     }
