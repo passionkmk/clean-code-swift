@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B4148242935CCFE009382DC /* ObjectsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4148232935CCFE009382DC /* ObjectsData.swift */; };
+		7B41482729361E58009382DC /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41482629361E58009382DC /* ErrorHandling.swift */; };
 		7B7B66E6292E53EA00AFC53E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7B66E5292E53EA00AFC53E /* main.swift */; };
 		7B7B66EE292E541300AFC53E /* Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7B66ED292E541300AFC53E /* Naming.swift */; };
 		7B7CB290292F497B005E5A0D /* Function.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7CB28F292F497B005E5A0D /* Function.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		7B4148232935CCFE009382DC /* ObjectsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectsData.swift; sourceTree = "<group>"; };
+		7B41482629361E58009382DC /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		7B7B66E2292E53EA00AFC53E /* CleanCodeSwift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CleanCodeSwift; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B7B66E5292E53EA00AFC53E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7B7B66ED292E541300AFC53E /* Naming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Naming.swift; sourceTree = "<group>"; };
@@ -54,6 +56,14 @@
 			path = ObjectsDataStructures;
 			sourceTree = "<group>";
 		};
+		7B41482529361E3F009382DC /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				7B41482629361E58009382DC /* ErrorHandling.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
 		7B7B66D9292E53EA00AFC53E = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +83,7 @@
 		7B7B66E4292E53EA00AFC53E /* CleanCodeSwift */ = {
 			isa = PBXGroup;
 			children = (
+				7B41482529361E3F009382DC /* ErrorHandling */,
 				7B4148222935C1A9009382DC /* ObjectsDataStructures */,
 				7B7CB292292F674F005E5A0D /* Function */,
 				7B7CB291292F6747005E5A0D /* Naming */,
@@ -159,6 +170,7 @@
 				7B7B66E6292E53EA00AFC53E /* main.swift in Sources */,
 				7B4148242935CCFE009382DC /* ObjectsData.swift in Sources */,
 				7B7CB294292F676B005E5A0D /* Employee.swift in Sources */,
+				7B41482729361E58009382DC /* ErrorHandling.swift in Sources */,
 				7B7B66EE292E541300AFC53E /* Naming.swift in Sources */,
 				7B7CB290292F497B005E5A0D /* Function.swift in Sources */,
 			);
