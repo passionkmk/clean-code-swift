@@ -5,6 +5,6 @@
 
 ### 목차
 - [Naming](doc/Naming.md)
-- [Method](doc/Method.md)
+- [Function](doc/Function.md)
 - [ObjectsDataStructures](doc/ObjectsDataStructures.md)
 - [ErrorHandling](doc/ErrorHandling.md)
