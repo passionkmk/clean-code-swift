@@ -9,3 +9,4 @@
 - [ObjectsDataStructures](doc/ObjectsDataStructures.md)
 - [ErrorHandling](doc/ErrorHandling.md)
 - [Boundaries](doc/Boundaries.md)
+- [Class](doc/Class.md)
