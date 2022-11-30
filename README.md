@@ -8,3 +8,4 @@
 - [Function](doc/Function.md)
 - [ObjectsDataStructures](doc/ObjectsDataStructures.md)
 - [ErrorHandling](doc/ErrorHandling.md)
+- [Boundaries](doc/Boundaries.md)
